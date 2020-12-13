@@ -1,0 +1,28 @@
+.login{
+	margin-bottom: 100px;
+	.row{
+		.col-12{
+			max-width: 400px;
+			margin: 0 auto;
+			text-align: left;
+			input{
+				width: 100%;
+				border:1px solid $color-border-input-0;
+				padding: 9px 15px;
+			}
+			a{
+				color: $color-black-0;
+			
+			}
+		}
+	}
+}
+
+// .firebaseui-container{
+// 	max-width: 100% !important;
+// 	.firebaseui-idp-list {
+// 		display: flex;
+// 		justify-content: center;
+
+// 	}
+// }

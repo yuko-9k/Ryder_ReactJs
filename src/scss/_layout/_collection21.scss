@@ -1,0 +1,10 @@
+.hang1{
+	width: 80%;
+	margin: 0 auto 50px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	.content-hinh{
+		width: 22%;
+	}
+}

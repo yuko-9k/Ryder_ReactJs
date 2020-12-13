@@ -1,0 +1,10 @@
+export const DETAIL_PRODUCT_REQUEST = "detailproductReducer/DETAIL_PRODUCT_REQUEST";
+export const DETAIL_PRODUCT_SUCCESS = "detailproductReducer/DETAIL_PRODUCT_SUCCESS";
+export const DETAIL_PRODUCT_FAIL = "detailproductReducer/DETAIL_PRODUCT_FAIL";
+export const ADD_PRODUCT_TO_CART = "addProductReducer/ADD_PRODUCT_TO_CART";
+export const INCREASE_VALUE_PRODUCT_OF_CART = "increaseValueProductReducer/INCREASE_VALUE_PRODUCT_OF_CART";
+export const REDUCTION_VALUE_PRODUCT_OF_CART = "reductionValueProductReducer/REDUCTION_VALUE_PRODUCT_OF_CART";
+export const REMOVE_PRODUCT = "RemoveProductReducer/REMOVE_PRODUCT";
+export const ADD_COMMENT_REQUEST = "AddCommentReducer/ADD_COMMENT_REQUEST";
+export const ADD_COMMENT_SUCCESS = "AddCommentReducer/ADD_COMMENT_SUCCESS";
+export const ADD_COMMENT_FAIL = "AddCommentReducer/ADD_COMMENT_FAIL";

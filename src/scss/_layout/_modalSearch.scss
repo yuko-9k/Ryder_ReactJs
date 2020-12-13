@@ -1,0 +1,64 @@
+.modal {
+	.modal-content {
+		.modal-body {
+			.dataFinded {
+				.row {
+					margin: 0 !important;
+					width: 100%;
+
+					.search-info {
+						display: flex;
+						justify-content: space-between;
+						padding: 15px;
+						border-bottom: 1px solid #eaeaea;
+					}
+
+					.search-articles {
+						display: flex;
+						justify-content: space-between;
+						padding: 15px;
+						border-bottom: 1px solid #eaeaea;
+					}
+
+				}
+
+				.wrapperProductSearch {
+					.col-10 {
+						.searchProduct {
+							width: calc(100% / 3);
+							display: block;
+
+							img {
+								width: 100%;
+							}
+
+							.caption {
+								p {
+									text-align: center;
+									margin: 0;
+									text-transform: capitalize;
+									font-weight: 700;
+								}
+							}
+						}
+					}
+					.col-2{
+						.searchArticles{
+							padding: 5px 15px;
+							a{
+								text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+								font-weight: 300;
+								font-style: normal;
+								font-size: 13px;
+								&:hover{
+									text-decoration: underline;
+								}
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+}

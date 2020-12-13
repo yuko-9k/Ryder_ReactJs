@@ -1,0 +1,4 @@
+=================11/17/2020==============
++FireBase: -- Project ryder-295807 --
+	Create Login with social with firebase(Authentication)
+	Bắt đầu khởi tạo realtime database

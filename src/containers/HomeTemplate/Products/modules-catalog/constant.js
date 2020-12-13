@@ -1,0 +1,3 @@
+export const GET_PRODUCT_CATALOG_REQUEST = "getProductCatalogReducer-GET_PRODUCT_CATALOG_REQUEST";
+export const GET_PRODUCT_CATALOG_SUCCESS = "getProductCatalogReducer-GET_PRODUCT_CATALOG_SUCCESS";
+export const GET_PRODUCT_CATALOG_FAIL = "getProductCatalogReducer-GET_PRODUCT_CATALOG_FAIL";
