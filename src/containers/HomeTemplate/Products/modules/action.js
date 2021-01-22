@@ -7,7 +7,6 @@ export const actListProductApi = () => {
 		api
 			.get(`Product/SelectAllProduct`)
 			.then(result => {
-				// console.log(result.data);
 				dispatch(actListProductSuccess(result.data))
 			})
 			.catch(err => {

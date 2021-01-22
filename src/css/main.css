@@ -487,11 +487,6 @@ footer .container-fluid .row .col-3 ul li a {
   padding: 30px;
 }
 
-.describeProduct .describeContent .container-fluid .row .col-6 .boxComment textarea {
-  width: 100%;
-  padding: 10px;
-}
-
 .describeProduct .describeContent .container-fluid .row .sizeGuide a {
   display: block;
   color: #000000;
@@ -509,6 +504,23 @@ footer .container-fluid .row .col-3 ul li a {
   background-color: #ffffff;
   border: 1px solid #000000;
   border-radius: 3px;
+}
+
+.describeProduct .describeContent .container-fluid .boxComment form {
+  margin-bottom: 50px;
+}
+
+.describeProduct .describeContent .container-fluid .boxComment form textarea {
+  width: 100%;
+  padding: 10px;
+  height: 150px;
+  border-radius: 10px;
+  outline: none;
+  background-color: #ecf0f1;
+}
+
+.describeProduct .describeContent .container-fluid .boxComment form button {
+  float: right;
 }
 
 .modal img {

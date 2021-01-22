@@ -22,16 +22,17 @@ export const actAddComment = (productID, commentText,history) => {
     dispatch(actAddCommentRequest());
     const token = JSON.parse(localStorage.getItem("UserInfo"));
     if (token) {
-      console.log(productID, token.token, commentText);
       setHeaders(token.token);
       api
         .post("/Comment/AddComment/", { productID, commentText })
-        .then((result) => {
-          console.log(result.data);
+				.then((result) => {
+					swal("Thành công", "Các bình luận không chuẩn mực sẽ bị gỡ bỏ", "success");
           dispatch(actAddCommentSuccess(result.data));
         })
-        .catch((err) => {
-          console.log(err);
+				.catch((err) => {
+					if (err.response.data.message === "Data Can Not Empty") {
+						swal("Lỗi", "Bạn chưa nhập nội dung", "error");
+					}
           dispatch(actAddCommentFail(err));
         });
 		} else {

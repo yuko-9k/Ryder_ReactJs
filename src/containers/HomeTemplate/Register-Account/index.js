@@ -42,7 +42,7 @@ class Register extends Component {
                   <label>Tài khoản</label>
                   <input
                     type="text"
-                    placeholder="Username"
+                    placeholder="Tên tài khoản"
 										name="userName"
 										onChange={this.handleOnChange}
                   ></input>

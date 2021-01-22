@@ -3,12 +3,15 @@ import * as action from "./modules/action";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 
+
 class Comment extends Component {
   componentDidMount = () => {
     this.props.fetchComment(this.props.match.params.id);
-  };
+	};
 
-  renderComment = () => {
+	renderComment = () => {
+		const user = JSON.parse(localStorage.getItem("UserInfo"));
+		console.log(user);
     const { comment } = this.props;
     if (comment) {
       return comment.map((item) => {
@@ -20,7 +23,6 @@ class Comment extends Component {
                   <i className="fa fa-user mr-2" />
                   {item.userName}
                 </p>
-
                 <p>{item.commentText}</p>
                 <hr />
               </div>

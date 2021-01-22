@@ -62,12 +62,6 @@
 						height: 600px;
 						padding: 30px;
 					}
-					.boxComment{
-						textarea{
-							width: 100%;
-							padding: 10px;
-						}
-					}
 				}
 				.sizeGuide{
 					a{
@@ -88,6 +82,22 @@
 						border: 1px solid $color-black-0;
 						border-radius: 3px;
 					}
+				}
+			}
+			.boxComment{
+				form{
+					textarea{
+						width: 100%;
+						padding: 10px;
+						height: 150px;
+						border-radius: 10px;
+						outline: none;
+						background-color: #ecf0f1;
+					}
+					button{
+						float: right;
+					}
+					margin-bottom: 50px;
 				}
 			}
 		}

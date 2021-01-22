@@ -37,7 +37,7 @@ class NavbarHome extends Component {
                           Cửa hàng <i className="fa fa-angle-down" />
                         </NavLink>
                         <div className="dropdown-menu">
-                          <NavLink to="/allProduct">Toàn bộ sản phẩm</NavLink>
+                          <NavLink to="/Product/SelectAllProduct">Toàn bộ sản phẩm</NavLink>
                           <Catalog />
                         </div>
                       </li>

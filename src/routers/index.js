@@ -5,14 +5,13 @@ import AboutUs from "../containers/HomeTemplate/OurWorld/aboutUs";
 import AllProduct from "../containers/HomeTemplate/Products/AllProduct.js";
 import DetailProduct from "../containers/HomeTemplate/DetailProduct/detailProduct";
 import Login from "../containers/HomeTemplate/Login/index";
-import ListNewArrivals from "../containers/HomeTemplate/Products/ListNewArrivals";
 import Register from "../containers/HomeTemplate/Register-Account/index";
 import ForgotPassword from "../containers/HomeTemplate/Forgot-password/index";
 import Search from "../containers/HomeTemplate/Search/index";
 import UserPage from "../containers/AdminTemplate/userManagerMent/index";
 import changePassword from "../containers/AdminTemplate/changePassword/index";
-import SellectProductCatalog from "../containers/HomeTemplate/Products/SellectProductCatalog";
-// import SellectProductCatalog from "../containers/HomeTemplate/Products/tempHook";
+// import SellectProductCatalog from "../containers/HomeTemplate/Products/SellectProductCatalog";
+import SelectProductCatalog from "../containers/HomeTemplate/Products/SelectProductCatalog";
 
 const routesHome = [
   {
@@ -42,7 +41,7 @@ const routesHome = [
   },
   {
     exact: false,
-    path: "/AllProduct",
+    path: "/Product/SelectAllProduct",
     component: AllProduct,
   },
   {
@@ -54,11 +53,6 @@ const routesHome = [
     exact: false,
     path: "/Login",
     component: Login,
-  },
-  {
-    exact: false,
-    path: "/NewArrivals",
-    component: ListNewArrivals,
   },
   {
     exact: false,
@@ -88,7 +82,7 @@ const routesHome = [
   {
     exact: false,
     path: "/Product/SelectProductCatalog/:catalogID",
-    component: SellectProductCatalog,
+    component: SelectProductCatalog,
   },
 ];
 

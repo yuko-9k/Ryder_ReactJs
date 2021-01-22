@@ -3,7 +3,8 @@ import { NavLink,Link } from "react-router-dom";
 import { connect } from "react-redux";
 import Loader from "../../Components/Loader/index";
 import * as action from "./modules/action";
-import Comment from "./comment/index"
+import Comment from "./comment/indexx";
+
 
 class DetailProduct extends Component {
 
@@ -20,18 +21,13 @@ class DetailProduct extends Component {
   };
 
   handleCart = () => {
-		console.log(this.props.data[0]);
 		const { data } = this.props;
 		this.props.fetchProductToCart(data[0]);
 	};
 	
-	handleComment = (e) => {
-		console.log(e.target.value);
-	}
 
   render() {
 		const { loading, data } = this.props;
-		console.log(data);
     if (loading) return <Loader />;
     return (
       <div>
@@ -55,18 +51,6 @@ class DetailProduct extends Component {
                   <img src="../img/logo-afterpay-colour@3x.png" alt="" />
                   <NavLink to="">Thêm thông tin</NavLink>
                 </p>
-                {/* <p>SIZE</p>
-                <p className="chooseSize">
-                  <label htmlFor="chooseSize" />
-                  <select id="chooseSize">
-                    <option value="XS/6">XS/6</option>
-                    <option value="S/8">S/8</option>
-                    <option value="M/10">M/10</option>
-                    <option value="L/12">L/12</option>
-                    <option value="XL/14">XL/14</option>
-                    <option value="XXL/16">XXL/16</option>
-                  </select>
-                </p> */}
               </div>
               <div className="col-3 text-right">
                 <p>
@@ -96,23 +80,6 @@ class DetailProduct extends Component {
                   <p>
                     {data && data[0].productDescription}
                   </p>
-                  {/* <p>- 100% organic cotton jersey</p>
-                  <p>- Contrast blue rib neckline</p>
-                  <p>- Relaxed, boxy fit</p>
-                  <p>- Scoop neckline</p>
-                  <p>- Short sleeves</p>
-                  <p>- Hand illustrated print</p>
-                  <p>- Lucinda and Kepsi wear a size S/8</p>
-                  <p>We love our planet as much as you love our tees.</p>
-                  <p>
-                    Now you can feel even happier in your Australian Tee knowing
-                    that 10% of its profits are heading towards protecting our
-                    only home.
-                  </p>
-                  <p>
-                    Wear them proudly, every flora and fauna represented on our
-                    tees needs our help.
-                  </p> */}
                   <p>Các phép đo áo:</p>
                   
                   <div className="mb-5 sizeGuide">
@@ -124,8 +91,15 @@ class DetailProduct extends Component {
                     <input type="text" placeholder="Địa chỉ Email" />
                     <button className="btn-default">Xác nhận</button>
                   </div>
-                  <img src="../img/describe-1.png" className="pl-0" alt=""/>
-                  <p>Bạn nghĩ thế nào?...</p>
+                  <img src="../img/describe-1.png" className="pl-0" alt=""/>								
+                  <p />
+                </div>
+                <div className="col-6">
+                  <img src="../img/describe-right-1.png" alt="" />
+									<img src="../img/describe-right-2.png" alt="" />
+                </div>
+							</div>
+							<p>Bạn nghĩ thế nào?...</p>
                   <p></p>
                   <div className="row boxComment">
                     <div className="col-12">
@@ -146,17 +120,10 @@ class DetailProduct extends Component {
 														this.props.fetchComment(data[0].productID, commentValue,this.props.history);
 													}}
 												>Bình luận</button>
-                      </form>
+											</form>
+											<Comment/>
                     </div>
                   </div>
-                  <p />
-                </div>
-                <div className="col-6">
-                  <img src="../img/describe-right-1.png" alt="" />
-									<img src="../img/describe-right-2.png" alt="" />
-									<Comment/>
-                </div>
-              </div>
             </div>
           </div>
         </section>
